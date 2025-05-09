@@ -8,10 +8,10 @@ toggleButton.addEventListener('click', () => {
   menuOpen = !menuOpen;
   menuOverlay.classList.toggle('open');
 
-  // Animate icon swap
-  menuIcon.style.transform = 'rotate(90deg)';
+  // Rotate the icon briefly for animation effect
+  menuIcon.style.transform = 'rotate(45deg)';
   setTimeout(() => {
-    menuIcon.src = menuOpen ? 'Nav (OPEN).svg' : 'Nav (Closed).svg';
+    menuIcon.src = menuOpen ? 'Nav_Icon_Open.svg' : 'Nav_Icon_Closed.svg';
     menuIcon.style.transform = 'rotate(0deg)';
-  }, 150);
+  }, 200);
 });
