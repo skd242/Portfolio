@@ -5,10 +5,32 @@
   box-sizing: border-box;
 }
 
+/* Font setup */
 body {
   font-family: 'Helvetica Neue', sans-serif;
-  line-height: 1.2;
+  line-height: 1; /* 1x font size = 120pt = 160px */
+  text-transform: uppercase;
 }
+
+/* Logo (SJH link) */
+.logo {
+  font-size: 160px; /* 120pt = 160px */
+  font-weight: 400;
+  line-height: 160px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  text-decoration: none;
+  color: black;
+}
+
+/* Optional: make logo responsive on small screens */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 64px;
+    line-height: 64px;
+  }
+}
+
 
 /* Header styling */
 .site-header {
