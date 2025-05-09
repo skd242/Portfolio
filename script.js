@@ -11,7 +11,7 @@ toggleButton.addEventListener('click', () => {
   // Animate icon rotation
   menuIcon.style.transform = 'rotate(90deg)';
   setTimeout(() => {
-    menuIcon.src = menuOpen ? 'Nav (OPEN).svg' : 'Nav (Closed).svg';
+    menuIcon.src = menuOpen ? 'Nav_Icon_Open.svg' : 'Nav_Icon_Closed.svg.svg';
     menuIcon.style.transform = 'rotate(0deg)';
   }, 150);
 });
