@@ -1,63 +1,45 @@
-/* Base reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Font setup */
+/* Global type settings */
 body {
   font-family: 'Helvetica Neue', sans-serif;
-  line-height: 1; /* 1x font size = 120pt = 160px */
   text-transform: uppercase;
-}
-
-/* Logo (SJH link) */
-.logo {
-  font-size: 160px; /* 120pt = 160px */
   font-weight: 400;
-  line-height: 160px;
-  text-transform: uppercase;
-  letter-spacing: 0;
-  text-decoration: none;
-  color: black;
 }
 
-/* Optional: make logo responsive on small screens */
-@media (max-width: 768px) {
-  .logo {
-    font-size: 64px;
-    line-height: 64px;
-  }
-}
-
-
-/* Header styling */
+/* Sticky header */
 .site-header {
   position: sticky;
   top: 0;
   width: 100%;
   background: transparent;
   z-index: 999;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
+/* Navigation container */
 .nav-container {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  align-items: center;
+  align-items: flex-start;
+  padding: 2rem; /* adjust to match your SVG spacing */
 }
 
+/* Logo styling */
 .logo {
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 160px; /* 120pt = 160px */
+  line-height: 160px;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  letter-spacing: 0;
 }
 
-/* Menu button */
+/* Menu toggle icon */
 .menu-toggle {
   background: none;
   border: none;
@@ -66,16 +48,16 @@ body {
 }
 
 .menu-toggle img {
-  width: 24px;
-  height: 24px;
+  width: 48px; /* adjust based on your SVG icon size */
+  height: 48px;
   transition: transform 0.3s ease;
 }
 
-/* Overlay menu */
+/* Overlay menu styling */
 .menu-overlay {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   height: 100vh;
   width: 100vw;
   background: rgba(255, 255, 255, 0.95);
@@ -96,11 +78,11 @@ body {
 }
 
 .menu-overlay nav ul li {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .menu-overlay nav ul li a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 64px;
   color: black;
 }
